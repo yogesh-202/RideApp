@@ -31,8 +31,7 @@ const UserLogin = () => {
       navigate('/home')  //home is actually wrperd with <userprotectedwrapper/> so home pe jane se pahle ye 
       // userprotectedwrapper pe jayega aur check karega ki user login ho gya h ki nhi 
     }
-
-
+    
     setEmail('')
     setPassword('')
   }

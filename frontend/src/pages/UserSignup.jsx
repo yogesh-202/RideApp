@@ -4,7 +4,6 @@ import axios from 'axios'
 import { UserDataContext } from '../context/UserContext'
 
 
-
 const UserSignup = () => {
   const [ email, setEmail ] = useState('')
   const [ password, setPassword ] = useState('')
@@ -14,12 +13,7 @@ const UserSignup = () => {
 
   const navigate = useNavigate()
 
-
-
   const { user, setUser } = useContext(UserDataContext)
-
-
-
 
   const submitHandler = async (e) => {
     e.preventDefault()
@@ -41,7 +35,7 @@ const UserSignup = () => {
       navigate('/home')
     }
 
-
+    
     setEmail('')
     setFirstName('')
     setLastName('')
